@@ -27,6 +27,6 @@ for i in range(10):
 
 most_email_sender=final_list[0][0]
 most_count=final_list[0][1]
-print("The highest number of email is sent by {} ,i.e {} times".format(most_email_sender,str(most_count)))
+print("The highest number of email is sent by %s,i.e %s times"%(most_email_sender,most_count))
 
 

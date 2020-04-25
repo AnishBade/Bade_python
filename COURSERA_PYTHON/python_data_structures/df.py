@@ -1,3 +1,3 @@
-str="my name: anish : bade"
-breake=str.split(':')
-print(breake)
+i=1
+f=1.1
+print("integer is: %s and float is %s"%(i,f))

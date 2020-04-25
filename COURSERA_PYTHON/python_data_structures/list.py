@@ -1,3 +1,3 @@
 str='anish'
-list=str.split()
+list=str.split("i")
 print(len(list))
