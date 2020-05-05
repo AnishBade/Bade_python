@@ -12,6 +12,7 @@ db.commit()
 
 def new_user():
     found = 0
+    name=''
     while found == 0:
         name = input("Enter a username:")
         with sqlite3.connect("sqlite_tutorial_2.db") as db:
@@ -22,14 +23,15 @@ def new_user():
         else:
 
             found=1
-        firstname=input("Enter your first name:")
-        surname=("Enter your last name:")
-        password=input("Enter a Password:")
-        password1=input("Re-Enter your Password:")
-        while password!=password1:
+    firstname=input("Enter your first name:")
+    surname =input("Enter your surname:")
+    password=input("Enter a Password:")
+    password1=input("Re-Enter your Password:")
+    while password!=password1:
             print("You entered wrong password.Please enter your password again:")
             password1 = input("Re-Enter your Password:")
-    cursor.execute('''INSERT INTO user(username,firstname,surname,password) VALUES(name,firstname,surname,password)''')
+    insert='''INSERT INTO user(username,firstname,surname,password) VALUES(?,?,?,?)'''
+    cursor.execute(insert,[(name),(firstname),(surname),(password)])
     db.commit()
 new_user()
 cursor.execute("SELECT *FROM user")
