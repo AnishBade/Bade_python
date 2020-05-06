@@ -1,6 +1,7 @@
 import turtle
 win=turtle.Screen()
 babe=turtle.Turtle()
+babe.speed(0)
 babe.color("purple")
 distance=0.1
 angle=8
