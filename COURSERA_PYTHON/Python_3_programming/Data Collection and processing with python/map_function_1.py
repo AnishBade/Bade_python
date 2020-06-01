@@ -4,7 +4,7 @@ def triple(value):
 
 def triple_stuff(a_list):
     new_list= map(triple,a_list)
-    return new_list
+    return list(new_list)
 
 
 def quadruple(a_list):
