@@ -1,0 +1,7 @@
+{
+    "name":"anish",
+    
+    "cars":["ferrari","volkswaegen","bmw"],
+    "phones": ["iphone 8","iphone 9","iphone 10"]
+    
+}
